@@ -15,26 +15,37 @@ html,body,.body{width:100%; position:fixed; top:0; left:0; right:0; bottom:0; ov
 .scroBox{position:fixed; left:0; top:0; right:0; bottom:0;}
 .scroBox,.scroBox .scroCon,.scroBox .scroSec,.scroBox .scroSecBox,.scroBox .scroSecBg,.scroBox .scroSecCon{width:100%; height:100%; overflow:hidden;}
 .scroBox .scroSecBox{position:relative;}
+.originTop{-webkit-transform-origin:center top; transform-origin:center top;}
+.originBot{-webkit-transform-origin:center bottom; transform-origin:center bottom;}
 .scroBox .scroSecBg,.scroBox .scroSecCon{position:absolute; left:0; top:0;}
 
 .scroBox .moving{-webkit-transition:all 0.4s ease; transition:all 0.4s ease;}
 
-.scroSecA,.scroSecA .scroSecBg{background:#ccc;}
-.scroSecB,.scroSecB .scroSecBg{background:#cff;}
-.scroSecC,.scroSecC .scroSecBg{background:#fcf;}
+.scroSecA,.scroSecB,.scroSecC{background:#fff;}
+
+.scroSecA .scroSecBg{background:#ccc;}
+.scroSecB .scroSecBg{background:#cff;}
+.scroSecC .scroSecBg{background:#fcf;}
 
 
 .aniItem{position:absolute; display:none;}
 .scroSecCur .aniItem{display:block;}
 .aniItem img{width:100%;}
 
+/*测试用开始*/
+.dFixed{position:fixed; right:0; top:0; width:100px; font-size:12px; line-height:18px; color:#000;}
+/*测试用结束*/
+
+
+
+/*以下是动画模块*/
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   /*以下代码会影响chrome浏览器手机调试器的touch监听
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  */
+  animation-fill-mode: both;*/
 }
 
 
@@ -1008,8 +1019,3 @@ html,body,.body{width:100%; position:fixed; top:0; left:0; right:0; bottom:0; ov
     animation-timing-function: ease-out;
   }
 }
-
-
-/*测试用开始*/
-.dFixed{position:fixed; right:0; top:0; width:100px; font-size:12px; line-height:18px; color:#000;}
-/*测试用结束*/
